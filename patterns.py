@@ -16,7 +16,6 @@
 #         print("*", end="")
 #     print()
 
-rows=4
-for i in list(range(1, rows + 1)) + list(range(rows - 1, 0, -1)):
-    print(" " * (rows - i) + "* " * i)
- 
+# rows=4
+# for i in list(range(1, rows + 1)) + list(range(rows - 1, 0, -1)):
+#     print(" " * (rows - i) + "* " * i)
