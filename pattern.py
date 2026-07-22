@@ -20,5 +20,14 @@
 # for i in list(range(1, rows + 1)) + list(range(rows - 1, 0, -1)):
 #     print(" " * (rows - i) + "* " * i)
 
-n = 5
-print("Armstrong" if n == sum(int(i) ** len(str(n)) for i in str(n)) else "Not Armstrong")
+# n = 5
+# print("Armstrong" if n == sum(int(i) ** len(str(n)) for i in str(n)) else "Not Armstrong")
+
+n = int(input("Enter the size: "))
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
