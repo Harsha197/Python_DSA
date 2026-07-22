@@ -23,11 +23,18 @@
 # n = 5
 # print("Armstrong" if n == sum(int(i) ** len(str(n)) for i in str(n)) else "Not Armstrong")
 
-n = int(input("Enter the size: "))
-for i in range(n):
-    for j in range(n):
-        if i == 0 or i == n - 1 or j == 0 or j == n - 1:
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
+# n = int(input("Enter the size: "))
+# for i in range(n):
+#     for j in range(n):
+#         if i == 0 or i == n - 1 or j == 0 or j == n - 1:
+#             print("*", end=" ")
+#         else:
+#             print(" ", end=" ")
+#     print()
+
+n = int(input("Enter rows: "))
+for i in range(1, n + 1):
+    print(" " * (n - i), end="")
+    for j in range(1, i + 1):
+        print(j, end=" ")
     print()
